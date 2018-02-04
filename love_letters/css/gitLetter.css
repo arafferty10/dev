@@ -1,0 +1,109 @@
+/*Aidan Rafferty
+University of Colorado Boulder
+Creative Web Development
+Spring 2018*/
+
+/*Universal Setup Elements*/
+
+html{
+
+}
+
+body, .container{
+	width: 98%;
+	height: 100%;
+}
+
+body{
+	animation-name: colorChange;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+	background-color: #bf75f4;
+}
+
+/*Parent Elements*/
+
+header{
+	width: 100%;
+	text-align: center;
+}
+
+main{
+	/*border: 2px solid black;*/
+	margin: 5px auto;
+	color:black;
+	font-size: 18pt;
+	width: 70%;
+	font-family: 'Berkshire Swash', cursive;
+	border-top: 5px dashed white;
+}
+
+aside{
+	/*border: 2px solid black;*/
+	width: 40%;
+	margin: 5px auto;
+	font-family: 'Berkshire Swash', cursive;
+	border-top: 5px dashed white;
+	font-size: 16pt;
+}
+
+footer{
+	width: 70%;
+	text-align: center;
+	margin: 40px auto;
+	font-family: 'Berkshire Swash', cursive;
+	border-top: 5px dashed white;
+	padding: 10px;
+}
+
+/*Child Elements*/
+
+nav{
+	width: 40%;
+	text-align:center;
+	border-top: 5px dashed white;
+	margin: 5px auto;
+	word-spacing: 60px;
+	font-family: 'Pacifico', cursive;
+	font-size: 16pt;
+	color: black;
+}
+
+h1{
+	font-family: 'Pacifico', cursive;
+	color: black;
+	font-size: 3em;
+	padding: none;
+	margin: none;
+}
+
+h2{
+	font-family: 'Berkshire Swash', cursive;
+	font-size: 20pt;
+	text-align: center;
+}
+
+a{
+	text-decoration: none;
+	color: black;
+}
+
+a:hover, h1:hover{
+	color: rgb(255, 170, 196);;
+	text-decoration: none;
+}
+
+
+/*Animations*/
+
+@keyframes colorChange{
+	0% {background-color: #c35bf7;}
+	12.5% {background-color: #da5bf7;}
+	25% {background-color: #f75bdf;}
+	37.5% {background-color: #f75b7a;}
+	50% {background-color: #e55050;}
+	62.5% {background-color: #f75b7a;}
+	75% {background-color: #f75bdf;}
+	87.5% {background-color: #da5bf7;}
+	100% {background-color: #c35bf7;}
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Semantic Markup</title>
+</head>
+<body>
+	<!-- div generic not semantic, design only -->
+	<div class="container">
+		
+		<header> <!-- header for the page if it is standalone, can have more headers for article titles, logos go here -->
+			<h1> <!-- Should only be one h1 per page -->
+				Semantic Markup
+			</h1>
+		</header>
+		
+		<!-- nav>ul>li*5>a[#]{link $} -->
+		<nav> <!-- Only one per webpage, all main INTERNAL navigational links go here -->
+			<ul>
+				<li><a href="#">link 1</a></li>
+				<li><a href="#">link 2</a></li>
+				<li><a href="#">link 3</a></li>
+				<li><a href="#">link 4</a></li>
+				<li><a href="#">link 5</a></li>
+			</ul>
+		</nav>
+
+		<!-- Figure alt tags for information message for accessibility-->
+		<!-- figure*2>img[src="http://placehold.it/200x200"] -->
+		<figure><img src="http://placehold.it/200x200" alt="place holder"></figure>
+		<figure><img src="http://placehold.it/200x200" alt="place holder 2"></figure>
+
+		<!-- Main content of a page -->
+		<!--main>h2+p*2>lorem-->
+		<main>
+			<h2>Main of thingz</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel natus repellendus accusamus nisi necessitatibus sapiente, iure, maiores explicabo magni dolore provident voluptas facilis alias eligendi adipisci aliquam nam molestiae deserunt.</p>
+
+			<p>Sed nostrum fugiat incidunt eum nesciunt optio, nemo inventore consequuntur fuga, ea sequi, harum cupiditate aut, excepturi voluptatem? Similique sed nam et voluptate. Sit odit, eligendi ex eum amet pariatur.</p>
+		</main>
+
+		<!-- Sections group things together semantically-->
+		<!-- Main area can have multiple sections, this can be a parent or a child function-->
+		<!--section>h2+p*2>lorem-->
+		<section>
+			<h2>Section o Shtuff</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam provident delectus, impedit inventore non sit commodi fugit, dolores quos ipsa quaerat quam iusto nesciunt explicabo, porro laudantium adipisci asperiores vero!</p>
+			<p>Iure fuga voluptatum assumenda, animi aspernatur eligendi pariatur magnam iste qui impedit hic dolorem eum nesciunt eos quasi nemo, iusto cum nam quae vero quis laudantium cumque, commodi ea. Fuga.</p>
+		</section>
+
+<section>	
+	
+	<h2>Grouped Together</h2>	
+
+		<!-- Articles are independant stand alone syndacation -->
+		<!-- article>h2+p*2>lorem -->
+		<article>
+			<h2>Article yayy</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae consequuntur commodi quidem ducimus, ea soluta eligendi reiciendis non, nemo impedit iusto, dolore tempora doloremque velit, corporis culpa voluptatum eius officiis.</p>
+			<p>Voluptatum, asperiores, dolores aperiam facere molestiae expedita et architecto suscipit doloribus aut blanditiis aliquid accusamus nam ducimus veritatis nostrum ratione reprehenderit quos distinctio harum beatae natus quia! Minus, earum, maiores.</p>
+		</article>
+
+		<!-- Supplementary information (sidebar) -- >
+		<!-- only parent that doesnt NEED a header -->
+		<!-- aside>h2+p*2>lorem -->
+		<aside>
+			<h2></h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto deleniti praesentium ut nobis similique officiis doloribus omnis reiciendis labore, laborum perferendis quia sint, a dolore eaque. Totam animi natus quam.</p>
+			<p>Maxime molestiae pariatur culpa, deserunt eius molestias dolorum, neque? Cumque totam error asperiores possimus mollitia officia, molestiae deserunt qui iure, est, ex repudiandae nisi quam alias voluptatem dolores nobis odit!</p>
+		</aside>
+
+</section>		
+
+		<!-- Bottom of the page info -->
+		<!-- footer>address+small -->
+		<footer>
+			<!-- at the bottom of a webpage this is typically the creater, or in an article it can be the author, can be email, website, social media, etc -->
+			<address>Aidan Rafferty</address>
+			<!-- Small print, depricated, used for copyright etc -->
+			<small>&copy; 2018</small>
+		</footer>
+		
+
+	</div> <!-- end container -->
+	
+</body>
+</html>
